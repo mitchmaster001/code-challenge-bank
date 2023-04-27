@@ -10,7 +10,7 @@ function TransactionList() {
   },[]);
 
   const handleDelete = (id) => {
-    fetch(`https://mitch-pmwm.onrender.com/transactions${id}`, {
+    fetch(`https://mitch-pmwm.onrender.com/transactions/${id}`, {
       method: 'DELETE'
     })
       .then(() => {
