@@ -25,7 +25,7 @@ const TransactionTable = ({ transactions, onDelete }) => {
 
 
   const handleDelete = (id) => {
-    fetch(` http://localhost:8000/transactions/${id}`, {
+    fetch(`https://mitch-pmwm.onrender.com/transactions/${id}`, {
       method: 'DELETE',
     })
       .then(() => {

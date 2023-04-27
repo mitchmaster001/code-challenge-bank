@@ -4,13 +4,13 @@ function TransactionList() {
   const [transactions, setTransactions] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/transactions')
+    fetch('https://mitch-pmwm.onrender.com/transactions')
       .then(response => response.json())
       .then(data => setTransactions(data));
   },[]);
 
   const handleDelete = (id) => {
-    fetch(` http://localhost:8000/transactions${id}`, {
+    fetch(`https://mitch-pmwm.onrender.com/transactions${id}`, {
       method: 'DELETE'
     })
       .then(() => {

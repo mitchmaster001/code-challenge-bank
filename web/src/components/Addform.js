@@ -21,7 +21,7 @@ const newtransaction = {
 
 console.log(newtransaction);
 
-fetch( "http://localhost:8000/transactions", {
+fetch( "https://mitch-pmwm.onrender.com/transactions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
